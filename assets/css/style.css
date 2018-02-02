@@ -11,6 +11,7 @@ body {
 
 footer {
   font-size: 11px;
+  clear: both;
 }
 
 /* Navigation */
@@ -41,6 +42,31 @@ footer  a:active,
 #site-nav  a:active,
 #page-nav a:active {
   color: #fff;
+}
+
+#announcement a:link,
+.latest-other-item a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+#announcement a:visited, 
+.latest-other-item a:visited {
+  color: #000;
+}
+
+#announcement a:hover {
+  color: #000;
+}
+
+.latest-other-item a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+#announcement a:active,
+.latest-other-item a:active {
+  color: #000;
 }
 
 #site-nav {
@@ -97,5 +123,117 @@ footer  a:active,
 
 #search {
   border-left: 1px solid #d3d3d3;
-  padding: 5px;
+  padding-left: 5px;
+}
+
+/* latest */
+
+#feature {
+  margin-top: 10px;
+  height: 238px;
+  width: 745px;
+  background-image: url("../graphics/design-3-796x398.png");
+  background-size: 745px 238px;
+  opacity: 0.5;
+  float: left;
+}
+
+#latest-right {
+  margin-top: 10px;
+  margin-left: 5px;
+  float: left;
+}
+
+#latest-right-top {
+  height: 114px;
+  width: 380px;
+  opacity: 0.5;
+  background-image: url("../graphics/ups_bitcoin-796x417.jpg");
+  background-size: 380px 114px;
+}
+
+#latest-right-bottom {
+  margin-top: 10px;
+  height: 114px;
+  width: 380px;
+  opacity: 0.5;
+  background-image: url("../graphics/GTA-6-Female-Protag-796x417.jpg");
+  background-size: 380px 114px;
+}
+
+#latest-main a:link {
+  margin-left: 10px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+#latest-right a:link {
+  margin-left: 15px;
+  font-size: 30px;
+}
+
+#latest-main a:visited {
+  color: #fff;
+}
+
+#latest-main a:hover {
+  color: #fff;
+}
+
+#latest-main a:active {
+  color: #fff;
+}
+
+#feature a,
+#latest-right a {
+  display: block;
+}
+
+#latest-right a {
+  position: relative;
+  top: 20px;
+}
+
+#feature a:nth-child(2) {
+  position: relative;
+  top: 90px;
+}
+
+#latest-other img {
+  width: 257px;
+  height: 130px;
+}
+
+.latest-other-item {
+  margin: 10px 10px 0 10px;
+  padding: 0;
+  float: left;
+}
+
+.latest-other-item p:nth-child(2) {
+  margin: 5px 0 0 0;
+  padding: 0;
+  color: #000;
+}
+
+.latest-other-item p:nth-child(3) {
+  margin: 5px 0 0 0;
+  padding: 0;
+  color: #d3d3d3;
+  font-size: 14px;
+}
+
+/* Misc */
+
+#announcement {
+  margin: 0;
+  border: 0;
+  background-color: yellow;
+  clear: both;
+}
+
+#announcement a {
+  margin-left: 10px;
 }

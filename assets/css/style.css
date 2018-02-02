@@ -4,12 +4,17 @@
   box-sizing: border-box;
 }
 
+html {
+  min-height: 100%;
+}
+
 body {
  margin: 0;
  padding: 0;
 }
 
 footer {
+  line-height: 50px;
   font-size: 11px;
   clear: both;
 }
@@ -131,9 +136,10 @@ footer  a:active,
 #feature {
   margin-top: 10px;
   height: 238px;
-  width: 745px;
+  width: 65%;
   background-image: url("../graphics/design-3-796x398.png");
-  background-size: 745px 238px;
+  background-repeat: no-repeat;
+  background-size: 100% 238px;
   opacity: 0.5;
   float: left;
 }
@@ -142,23 +148,26 @@ footer  a:active,
   margin-top: 10px;
   margin-left: 5px;
   float: left;
+  width: 33%;
 }
 
 #latest-right-top {
   height: 114px;
-  width: 380px;
+  width: auto;
   opacity: 0.5;
   background-image: url("../graphics/ups_bitcoin-796x417.jpg");
-  background-size: 380px 114px;
+  background-repeat: no-repeat;
+  background-size: 100%  114px;
 }
 
 #latest-right-bottom {
   margin-top: 10px;
   height: 114px;
-  width: 380px;
+  width: auto;
   opacity: 0.5;
   background-image: url("../graphics/GTA-6-Female-Protag-796x417.jpg");
-  background-size: 380px 114px;
+  background-repeat: no-repeat;
+  background-size: 100% 114px;
 }
 
 #latest-main a:link {
@@ -193,32 +202,41 @@ footer  a:active,
 
 #latest-right a {
   position: relative;
-  top: 20px;
+  top: 10%;
 }
 
 #feature a:nth-child(2) {
   position: relative;
-  top: 90px;
+  top: 15%;
 }
 
-#latest-other img {
-  width: 257px;
+#latest-other {
+  clear: left;
+}
+
+.latest-other-item img {
+  width: 100%;
   height: 130px;
 }
 
 .latest-other-item {
   margin: 10px 10px 0 10px;
+  width: 20%;
   padding: 0;
   float: left;
 }
 
-.latest-other-item p:nth-child(2) {
+.other-item-info {
+  margin: 5px 0 0 0;
+}
+
+.latest-other-item p:nth-child(1) {
   margin: 5px 0 0 0;
   padding: 0;
   color: #000;
 }
 
-.latest-other-item p:nth-child(3) {
+.latest-other-item p:nth-child(2) {
   margin: 5px 0 0 0;
   padding: 0;
   color: #d3d3d3;
@@ -236,4 +254,58 @@ footer  a:active,
 
 #announcement a {
   margin-left: 10px;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 791px) {
+   [class*="menu"] li {
+     display: none;
+   }
+
+   #search {
+    display: initial;
+   }
+
+   #feature {
+     width: 100%;
+     background-size: 100% 238px;
+   }
+
+   #feature a:nth-child(2) {
+     font-size: 30px;
+   }
+
+   #latest-right {
+     width: 100%;
+   }
+
+   .latest-other-item {
+     width: 100%;
+   }
+
+   .other-item-info {
+     display: inline-block;
+     width: 80%;
+   }
+
+   .other-item-info a {
+     font-size: 14px;
+   }
+
+   .latest-other-item img {
+     width: 70px;
+     height: 55px;
+   }
+}
+
+@media only screen and (max-width: 481px) {
+   #announcement a {
+     font-size: 14px;
+   }
+
+   .other-item-info {
+     display: inline-block;
+     width: 50%;
+   }
 }

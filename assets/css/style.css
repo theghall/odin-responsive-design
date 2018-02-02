@@ -274,11 +274,16 @@ footer  a:active,
 
    #feature a:nth-child(2) {
      font-size: 30px;
+     line-height: 0.8;
    }
 
    #latest-right {
      width: 100%;
    }
+
+   #latest-right a {
+     line-height: 0.8;
+   } 
 
    .latest-other-item {
      width: 100%;
@@ -307,5 +312,6 @@ footer  a:active,
    .other-item-info {
      display: inline-block;
      width: 50%;
+     line-height: 0.7;
    }
 }
